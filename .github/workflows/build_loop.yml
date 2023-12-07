@@ -29,7 +29,7 @@ jobs:
         with:
           submodules: recursive
 
-# Customize Loop: Download and apply patches
+       # Customize Loop: Download and apply patches
       - name: Customize Loop
         run: | 
 
@@ -39,8 +39,10 @@ jobs:
           /bin/bash -c "$(curl -fsSL \
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
           future_carbs_4h \
+          high_carb_limit \
           override_sens \
           now_line \
+          lnl_icon \
           customtypeone_looppatches \
           2002 \
           algorithm_experiments \
